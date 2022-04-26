@@ -67,6 +67,10 @@ const Board = () => {
     }
     setCells(squares);
     winningCombination(squares);
+    if (squares.includes('') === false){
+      alert('Draw')
+      handleReset();
+    }
     // checkDraw(squares);
   };
 
